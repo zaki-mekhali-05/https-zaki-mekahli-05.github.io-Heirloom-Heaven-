@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart | Heirloom Haven</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <div class="cart-container">
+        <h2>Shopping Cart</h2>
+        <div class="cart-items">
+            <div class="cart-item">
+                <img src="product.jpg" alt="Product Image">
+                <div class="cart-details">
+                    <h3>Vintage Wooden Chair</h3>
+                    <p class="item-price" data-price="9999">₹9,999</p>
+                    <div class="quantity-controls">
+                        <button class="decrease">-</button>
+                        <input type="text" value="1" class="quantity">
+                        <button class="increase">+</button>
+                    </div>
+                </div>
+                <button class="remove-item">Remove</button>
+            </div>
+        </div>
+        <div class="coupon-section">
+            <input type="text" id="coupon-code" placeholder="Enter coupon code">
+            <button id="apply-coupon">Apply</button>
+            <p id="coupon-message"></p>
+        </div>
+        <div class="shipping-section">
+            <h3>Shipping:</h3>
+            <select id="shipping-method">
+                <option value="0">Free Shipping (₹0)</option>
+                <option value="200">Express (₹200)</option>
+            </select>
+        </div>
+        <div class="cart-summary">
+            <h3>Total: <span id="total-price">₹9,999</span></h3>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <script src="cart.js"></script>
+</body>
+</html>

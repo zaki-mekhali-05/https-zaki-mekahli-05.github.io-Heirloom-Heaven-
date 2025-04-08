@@ -1,0 +1,229 @@
+body{
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    overflow-x: hidden;
+}
+.top{
+    background-color: #fff;
+}
+.logo h1{
+    font-size: 35px;
+    font-weight: bold;
+    margin-left: 10px;
+    color: #6F4D38;
+    width: 350%;
+    height: 25px;
+}
+.logo p{
+    font-family: "Dancing Script", cursive;
+    font-size: 15px;
+    white-space: nowrap;
+    margin-left: 10px;
+    
+}
+.up{
+    display: flex;
+    align-items: center;
+}
+.logo p{
+    width: 350px;
+    font-style: italic;
+}
+
+.searchbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+}
+.searchbar button{
+    position: absolute;
+    right: 10px;
+    left: 460px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.searchbar button img{
+    width: 18px;
+    height: 18px;
+}
+.searchbar input{
+    position: relative;
+    border-radius: 10px;
+    padding: 10px 40px 10px 10px;
+    background-color: #1C2E20;
+    color: white;
+    width: 80%;
+    border: none;
+    outline: none;
+}
+.searchbar form{
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    margin-left: 200px;
+    display: flex;
+    align-items: center;
+}
+::placeholder{
+    color: white;
+}
+.sections{
+    font-weight: 500 ;
+    padding: 20px 10px;
+    margin-top: 20px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px gray;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.logo p {
+    font-family: "Dancing Script", cursive;
+    font-size: 15px;
+    font-style: italic;
+    white-space: normal;           
+    word-break: break-word;        
+    overflow-wrap: break-word;     
+    margin-left: 10px;
+    max-width: 90%;                
+}
+.sections a{
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.sections a:hover{
+    transform: scale(1.1);
+    color: #8B6F47;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    overflow-x: hidden;
+    background-color: #1C2E20;
+}
+.products h1{
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+}
+.products h2{
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+}
+.products1{
+    display: grid;
+    grid-template-columns: repeat(4, 270px);
+    gap: 25px;
+    justify-content: center;
+}
+.product{
+    background-color: white;
+    border: solid 1px black;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+}
+.product img{
+    max-height: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    width: 100%;
+}
+.product p{
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+}
+.price{
+    color: red;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+button{
+    padding: 10px;
+    width: 150px;
+    border-radius: 30px;
+    background-color: #1C2E20;
+    color: white;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 15px;
+}
+button:hover {
+    background-color: black;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+.container {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    background-color: #ff6600; 
+    padding: 10px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.container:hover {
+    background-color: #ff4500;
+}
+#cart-counter {
+    background: #fff;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-size: 12px;
+    min-width: 25px;
+    text-align: center;
+}
+.reset{
+    position: fixed;
+    top: 20px;
+    right: 130px;
+    background-color: #ff6600; 
+    padding: 10px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+@media(max-width: 1024px) and (min-width: 350px){
+    .products1{
+        display: grid;
+        grid-template-columns: repeat(1, 270px);
+    }
+    .sections{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    .container, .reset, .searchbar{
+        display: none;
+    }
+    .logo p {
+        text-align: center;
+        margin: 10px auto;
+      }
+}
+.menu{
+    display: none;
+}

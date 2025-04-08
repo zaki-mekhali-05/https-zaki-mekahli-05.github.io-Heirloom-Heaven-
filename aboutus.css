@@ -1,0 +1,123 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.help-center h1{
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+.help-center p{
+    text-align: center;
+}
+.accordion{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+    margin: 0 auto; 
+}
+
+.accordion-button{
+    color: #6F4D38;
+    letter-spacing: 1px;
+    text-align: left;
+    padding: 12px 20px;
+    background-color: #f4f4f4;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.accordion-button:hover {
+    background-color: #e0e0e0;
+}
+a{
+    color: #1C2E20;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    display: inline-block; 
+}
+a:hover {
+    color: black;
+    transform: scale(1.1);
+}
+.accordion-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 10px 0;
+    margin-left: -20px;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px 0; 
+    min-height: 100px; 
+}
+.contact-item{
+    display: flex;
+    align-items: center; 
+    gap: 10px;
+}
+body{
+    background-color: #f5e7d6;
+}
+.accordion-content p, .accordion-content ul{
+    text-align: left; 
+}
+.contact-item img{
+    width: 24px;
+    height: 24px;
+}
+.description{
+    font-family: "Dancing Script", cursive;
+    margin-top: -18px;
+    font-size: 18px;
+}
+.worktimes{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.Heirloom{
+    color: #6F4D38;
+}
+.Heaven{
+    color: #1C2E20;
+}
+.li{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+ul {
+    list-style: none;
+    padding-left: 10px; 
+}
+.accordion-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100px;
+    padding: 10px 20px;
+    text-align: left;
+    border-left: 2px solid #6F4D38;
+    padding-left: 40px;
+    margin-left: -20px;
+}
+.accordion-content ul{
+    padding-left: 20px; 
+    margin: 10px 0; 
+}
+.contact, .worktimes{
+    align-items: start; 
+}
